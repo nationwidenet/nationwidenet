@@ -1,0 +1,522 @@
+/* CSS for Nation Wide Net Theme */
+
+:root {
+  --primary: #32CD32;
+  --accent: #0A0A23;
+  --bg: #F5F8FA;
+  --text: #222222;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--accent);
+  padding: 1rem 0;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--primary);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(10,10,35,0.6),
+      rgba(10,10,35,0.6)
+    ),
+    url('https://img.freepik.com/premium-photo/green-fiber-optics-lights-abstract-background_926199-1174970.jpg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #28a428;
+}
+
+/* Why Choose Us */
+.why-choose-section {
+  padding: 4rem 2rem;
+  background: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 2rem;
+  background-color: var(--bg);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  color: var(--accent);
+  margin-bottom: 2.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-card {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.service-card p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Plans Section CSS */
+
+.plans-section {
+  background: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plan-card {
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--bg);
+}
+
+.plan-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.plan-card h3 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.plan-card .price {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.plan-card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.plan-card .btn-primary {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.plan-card .btn-primary:hover {
+  background-color: #28a428;
+}
+
+
+
+
+.connect-section {
+  background: #f5f8fa;
+  padding: 5rem 2rem;
+}
+
+.connect-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-stack {
+  position: relative;
+}
+
+.image-stack .main-image {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.image-stack .overlay-image {
+  position: absolute;
+  top: 40px;
+  left: 220px;
+  width: 140px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.connect-right {
+  max-width: 600px;
+}
+
+.connect-title {
+  font-size: 2.2rem;
+  color: #32CD32;
+  margin-bottom: 1.5rem;
+}
+
+.connect-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.connect-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.connect-stats div {
+  text-align: center;
+}
+
+.connect-stats strong {
+  display: block;
+  font-size: 1.8rem;
+  color: #32CD32;
+}
+
+.connect-stats span {
+  color: #333;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #32CD32;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #28a428;
+}
+
+.testimonials-section {
+  background: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #32CD32;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #f5f8fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 1rem;
+}
+
+.testimonial-card p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  color: #32CD32;
+  font-size: 1.1rem;
+}
+
+.faq-section {
+  background: #f5f8fa;
+  padding: 4rem 2rem;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #32CD32;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+.faq-question .icon {
+  font-size: 1.5rem;
+  color: #32CD32;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  color: #555;
+  background: #f9f9f9;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.contact-section {
+  background: #f5f8fa;
+  padding: 4rem 2rem;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #32CD32;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-title,
+.info-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #32CD32;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.send-btn {
+  background: #32CD32;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.send-btn:hover {
+  background: #28a428;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.phone-number {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #32CD32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer {
+  background: #0A0A23;
+  padding: 2rem;
+  text-align: center;
+}
+
+.site-footer p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-nav a {
+  color: #32CD32;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
