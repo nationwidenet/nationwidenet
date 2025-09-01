@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#01DE82"/>
+      <stop offset="100%" style="stop-color:#05614B"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="32" height="32" fill="#020E0E" rx="6"/>
+  <circle cx="16" cy="16" r="12" fill="url(#faviconGradient)" opacity="0.3"/>
+  <circle cx="16" cy="16" r="8" fill="none" stroke="#01DE82" stroke-width="2"/>
+  <circle cx="16" cy="16" r="4" fill="#01DE82"/>
+  
+  <!-- Signal waves -->
+  <path d="M8 16 Q12 12 16 16 Q20 20 24 16" fill="none" stroke="#01DE82" stroke-width="1" opacity="0.6"/>
+  <path d="M6 16 Q11 9 16 16 Q21 23 26 16" fill="none" stroke="#01DE82" stroke-width="1" opacity="0.4"/>
+</svg>

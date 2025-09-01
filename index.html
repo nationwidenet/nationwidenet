@@ -3,603 +3,998 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nation Wide Net - High-Speed Internet & Cable Services</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Nation Wide Net - Fiber-Fast Internet & Live TV</title>
+    <meta name="description" content="Fiber-fast internet and live TV built for the way you live. Compare plans, bundles, and get connected today.">
+    <meta name="theme-color" content="#020E0E">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Nation Wide Net - Fiber-Fast Internet & Live TV">
+    <meta property="og:description" content="Fiber-fast internet and live TV built for the way you live.">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Nation Wide Net - Fiber-Fast Internet & Live TV">
+    <meta property="twitter:description" content="Fiber-fast internet and live TV built for the way you live.">
+    <meta property="twitter:image" content="">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nation Wide Net",
+      "description": "Internet and TV service provider",
+      "url": "",
+      "logo": "logo.svg",
+      "sameAs": []
+    }
+    </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Nation Wide Net</h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#plans" class="nav-link">Plans</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Ultra-Fast Internet & Premium Cable</h1>
-                <p class="hero-subtitle">Experience lightning-fast speeds up to 1 Gig with our fiber-optic network. Stream, game, and work without limits.</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">View Plans</button>
-                    <button class="btn btn-secondary">Check Availability</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="floating-card card-1">
-                    <i class="fas fa-wifi"></i>
-                    <span>1 Gig Speed</span>
-                </div>
-                <div class="floating-card card-2">
-                    <i class="fas fa-tv"></i>
-                    <span>300+ Channels</span>
-                </div>
-                <div class="floating-card card-3">
-                    <i class="fas fa-headset"></i>
-                    <span>24/7 Support</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Header -->
+    <header class="header" id="header">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Complete connectivity solutions for your home and business</p>
+            <a href="#" class="logo-link">
+                <img src="logo.svg" alt="Nation Wide Net" class="logo">
+            </a>
+            
+            <nav class="nav" id="nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#internet" class="nav-link">Internet</a>
+                <a href="#tv" class="nav-link">TV</a>
+                <a href="#bundles" class="nav-link">Bundles</a>
+                <a href="#business" class="nav-link">Business</a>
+                <a href="#support" class="nav-link">Support</a>
+            </nav>
+            
+            <div class="header-ctas">
+                <button class="btn btn-outline" onclick="openAddressChecker()">Check Availability</button>
+                <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Build My Bundle</button>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>High-Speed Internet</h3>
-                    <p>Blazing fast fiber-optic internet with speeds up to 1 Gigabit. Perfect for streaming, gaming, and remote work.</p>
-                    <ul>
-                        <li>Up to 1 Gig download speeds</li>
-                        <li>Unlimited data</li>
-                        <li>No contracts required</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tv"></i>
-                    </div>
-                    <h3>Premium Cable TV</h3>
-                    <p>Access to 300+ channels including premium networks, sports, movies, and international programming.</p>
-                    <ul>
-                        <li>300+ HD channels</li>
-                        <li>Premium movie channels</li>
-                        <li>DVR service included</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Digital Phone</h3>
-                    <p>Crystal clear digital phone service with unlimited local and long-distance calling across the nation.</p>
-                    <ul>
-                        <li>Unlimited nationwide calling</li>
-                        <li>Voicemail included</li>
-                        <li>Call forwarding</li>
-                    </ul>
-                </div>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <a href="#" class="mobile-nav-link">Home</a>
+                <a href="#internet" class="mobile-nav-link">Internet</a>
+                <a href="#tv" class="mobile-nav-link">TV</a>
+                <a href="#bundles" class="mobile-nav-link">Bundles</a>
+                <a href="#business" class="mobile-nav-link">Business</a>
+                <a href="#support" class="mobile-nav-link">Support</a>
+            </nav>
+            <div class="mobile-menu-ctas">
+                <button class="btn btn-outline" onclick="openAddressChecker()">Check Availability</button>
+                <button class="btn btn-primary" onclick="openBundleBuilder()">Build My Bundle</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Coverage Area Section -->
-    <section id="coverage" class="coverage">
-        <div class="container">
-            <div class="section-header">
-                <h2>Service Coverage Areas</h2>
-                <p>Expanding our network to serve more communities across the nation</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop&crop=center" alt="" class="hero-image" loading="eager">
+                <div class="hero-overlay"></div>
+                <div class="hero-highlight"></div>
             </div>
-            <div class="coverage-content">
-                <div class="coverage-map">
-                    <div class="map-container">
-                        <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Network coverage map">
-                        <div class="coverage-overlay">
-                            <div class="coverage-point point-1">
-                                <div class="pulse"></div>
-                                <span>New York</span>
+            <div class="container">
+                <div class="hero-content reveal-in">
+                    <h1 class="hero-title">Fiber-fast Internet & Live TV—built for the way you live</h1>
+                    <p class="hero-subtitle">Experience lightning-fast speeds, crystal-clear streaming, and seamless connectivity throughout your home.</p>
+                    <div class="hero-ctas">
+                        <button class="btn btn-primary btn-large" onclick="window.open('tel:8333412514', '_self')">Start with Internet</button>
+                        <button class="btn btn-outline btn-large" onclick="window.open('tel:8333412514', '_self')">Start with TV</button>
+                        <button class="btn btn-secondary btn-large" onclick="window.open('tel:8333412514', '_self')">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Address Checker -->
+        <section class="address-checker" id="address-checker">
+            <div class="container">
+                <div class="address-checker-content">
+                    <div class="address-checker-form">
+                        <h2>See what's available at your address</h2>
+                        <form class="checker-form" id="checker-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Enter your ZIP code or street address" class="form-input" id="address-input" required>
+                                <button type="submit" class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Check Now</button>
                             </div>
-                            <div class="coverage-point point-2">
-                                <div class="pulse"></div>
-                                <span>Chicago</span>
+                            <div class="form-note">
+                                <img src="alert-icon.svg" alt="" class="icon">
+                                <span>We'll show you available plans and pricing instantly</span>
                             </div>
-                            <div class="coverage-point point-3">
-                                <div class="pulse"></div>
-                                <span>Los Angeles</span>
-                            </div>
-                            <div class="coverage-point point-4">
-                                <div class="pulse"></div>
-                                <span>Miami</span>
+                        </form>
+                        <div class="checker-results" id="checker-results" style="display: none;">
+                            <div class="results-content">
+                                <h3>Great news! We're available in your area</h3>
+                                <div class="available-plans">
+                                    <div class="plan-preview">
+                                        <span class="plan-speed">Up to 1 Gig</span>
+                                        <span class="plan-price">Starting at $49.99/mo</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" onclick="scrollToSection('plans')">View All Plans</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="coverage-info">
-                    <h3>Check Service Availability</h3>
-                    <p>Enter your address to see if Nation Wide Net services are available in your area.</p>
-                    <div class="availability-checker">
-                        <input type="text" placeholder="Enter your ZIP code" class="zip-input">
-                        <button class="btn btn-primary check-btn">Check Availability</button>
-                    </div>
-                    <div class="coverage-stats">
-                        <div class="coverage-stat">
-                            <h4>50+</h4>
-                            <p>Cities Covered</p>
-                        </div>
-                        <div class="coverage-stat">
-                            <h4>15</h4>
-                            <p>States Served</p>
-                        </div>
-                        <div class="coverage-stat">
-                            <h4>95%</h4>
-                            <p>Coverage Rate</p>
-                        </div>
+                    <div class="address-checker-art">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center" alt="Savings illustration" loading="lazy">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Nation Wide Net</h2>
-                <p>Advanced technology and superior service that sets us apart</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Lightning Fast Speeds</h3>
-                    <p>Experience blazing-fast internet with our fiber-optic network delivering speeds up to 1 Gigabit.</p>
+        <!-- Plan Wizard -->
+        <section class="plan-wizard reveal-in" id="plan-wizard">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Find your perfect plan in 60 seconds</h2>
+                    <p>Answer a few quick questions and we'll recommend the ideal internet speed and TV package for your needs.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="wizard-content">
+                    <div class="wizard-illustrations">
+                        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&h=400&fit=crop&crop=center" alt="Work and study setup" class="wizard-img active" data-step="work">
+                        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&h=400&fit=crop&crop=center" alt="Gaming setup" class="wizard-img" data-step="gaming">
                     </div>
-                    <h3>Advanced Security</h3>
-                    <p>Built-in security features protect your network from threats with our comprehensive cybersecurity suite.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Professional Installation</h3>
-                    <p>Expert technicians ensure perfect setup and optimization of your home network for maximum performance.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile App Control</h3>
-                    <p>Manage your account, monitor usage, and control your network settings from anywhere with our mobile app.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud Storage</h3>
-                    <p>Free cloud storage included with premium plans to backup and access your files from any device.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>24/7 Expert Support</h3>
-                    <p>Round-the-clock technical support from certified professionals ready to help whenever you need it.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Plans Section -->
-    <section id="plans" class="plans">
-        <div class="container">
-            <div class="section-header">
-                <h2>Choose Your Plan</h2>
-                <p>Flexible plans designed to meet your connectivity needs</p>
-            </div>
-            <div class="plans-grid">
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3>Essential</h3>
-                        <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount">39</span>
-                            <span class="period">/mo</span>
-                        </div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> 100 Mbps Internet</li>
-                        <li><i class="fas fa-check"></i> 150+ TV Channels</li>
-                        <li><i class="fas fa-check"></i> Free Installation</li>
-                        <li><i class="fas fa-check"></i> 24/7 Support</li>
-                    </ul>
-                    <button class="btn btn-outline">Select Plan</button>
-                </div>
-                <div class="plan-card featured">
-                    <div class="plan-badge">Most Popular</div>
-                    <div class="plan-header">
-                        <h3>Premium</h3>
-                        <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount">69</span>
-                            <span class="period">/mo</span>
-                        </div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> 500 Mbps Internet</li>
-                        <li><i class="fas fa-check"></i> 250+ TV Channels</li>
-                        <li><i class="fas fa-check"></i> Premium Movie Channels</li>
-                        <li><i class="fas fa-check"></i> Free Installation & DVR</li>
-                        <li><i class="fas fa-check"></i> Priority Support</li>
-                    </ul>
-                    <button class="btn btn-primary">Select Plan</button>
-                </div>
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3>Ultimate</h3>
-                        <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount">99</span>
-                            <span class="period">/mo</span>
-                        </div>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> 1 Gig Internet</li>
-                        <li><i class="fas fa-check"></i> 300+ TV Channels</li>
-                        <li><i class="fas fa-check"></i> All Premium Channels</li>
-                        <li><i class="fas fa-check"></i> Digital Phone Service</li>
-                        <li><i class="fas fa-check"></i> VIP Support</li>
-                    </ul>
-                    <button class="btn btn-outline">Select Plan</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technology Section -->
-    <section id="technology" class="technology">
-        <div class="container">
-            <div class="section-header">
-                <h2>Cutting-Edge Technology</h2>
-                <p>Powered by the latest innovations in telecommunications</p>
-            </div>
-            <div class="tech-content">
-                <div class="tech-visual">
-                    <div class="tech-animation">
-                        <div class="fiber-cable">
-                            <div class="light-pulse pulse-1"></div>
-                            <div class="light-pulse pulse-2"></div>
-                            <div class="light-pulse pulse-3"></div>
-                        </div>
-                        <div class="network-nodes">
-                            <div class="node node-1"></div>
-                            <div class="node node-2"></div>
-                            <div class="node node-3"></div>
-                            <div class="node node-4"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tech-info">
-                    <div class="tech-feature">
-                        <h3>Fiber-Optic Network</h3>
-                        <p>Our state-of-the-art fiber-optic infrastructure delivers unmatched speed and reliability directly to your home.</p>
-                    </div>
-                    <div class="tech-feature">
-                        <h3>5G Integration</h3>
-                        <p>Seamlessly integrated 5G technology provides backup connectivity and enhanced mobile experiences.</p>
-                    </div>
-                    <div class="tech-feature">
-                        <h3>Smart Network Management</h3>
-                        <p>AI-powered network optimization automatically adjusts to provide the best possible performance.</p>
-                    </div>
-                    <div class="tech-feature">
-                        <h3>Future-Ready Infrastructure</h3>
-                        <p>Built to support emerging technologies and growing bandwidth demands for years to come.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Connecting America Since 2010</h2>
-                    <p>Nation Wide Net has been at the forefront of providing reliable, high-speed internet and cable services across the nation. Our commitment to excellence and customer satisfaction has made us a trusted name in telecommunications.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>2M+</h3>
-                            <p>Happy Customers</p>
-                        </div>
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Cities Served</p>
-                        </div>
-                        <div class="stat">
-                            <h3>99.9%</h3>
-                            <p>Uptime Guarantee</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-container">
-                        <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fiber optic cables">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Customers Say</h2>
-                <p>Real experiences from satisfied Nation Wide Net customers</p>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                    <div class="wizard-form">
+                        <div class="wizard-step active" data-step="1">
+                            <h3>How do you primarily use the internet?</h3>
+                            <div class="wizard-options">
+                                <button class="wizard-option" data-value="basic">
+                                    <span class="option-icon">📧</span>
+                                    <span class="option-text">Email & browsing</span>
+                                </button>
+                                <button class="wizard-option" data-value="streaming">
+                                    <span class="option-icon">📺</span>
+                                    <span class="option-text">Streaming & video calls</span>
+                                </button>
+                                <button class="wizard-option" data-value="gaming">
+                                    <span class="option-icon">🎮</span>
+                                    <span class="option-text">Gaming & downloads</span>
+                                </button>
+                                <button class="wizard-option" data-value="work">
+                                    <span class="option-icon">💼</span>
+                                    <span class="option-text">Remote work & study</span>
+                                </button>
                             </div>
-                            <p>"The installation was seamless and the internet speed is incredible. I can work from home without any interruptions and stream 4K content on multiple devices simultaneously."</p>
-                            <div class="testimonial-author">
-                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Sarah Johnson">
-                                <div class="author-info">
-                                    <h4>Sarah Johnson</h4>
-                                    <span>Remote Worker, Austin TX</span>
+                        </div>
+                        <div class="wizard-step" data-step="2">
+                            <h3>How many devices connect at once?</h3>
+                            <div class="wizard-options">
+                                <button class="wizard-option" data-value="few">1-5 devices</button>
+                                <button class="wizard-option" data-value="medium">6-15 devices</button>
+                                <button class="wizard-option" data-value="many">16+ devices</button>
+                            </div>
+                        </div>
+                        <div class="wizard-step" data-step="3">
+                            <h3>Interested in TV service?</h3>
+                            <div class="wizard-options">
+                                <button class="wizard-option" data-value="no">Internet only</button>
+                                <button class="wizard-option" data-value="basic">Basic TV package</button>
+                                <button class="wizard-option" data-value="premium">Premium channels</button>
+                                <button class="wizard-option" data-value="sports">Sports & entertainment</button>
+                            </div>
+                        </div>
+                        <div class="wizard-results" id="wizard-results" style="display: none;">
+                            <h3>Perfect! Here's your recommended plan:</h3>
+                            <div class="recommended-plan">
+                                <div class="plan-details">
+                                    <h4 id="recommended-plan-name">Turbo 500</h4>
+                                    <p id="recommended-plan-desc">Perfect for streaming, gaming, and working from home</p>
+                                    <div class="plan-features" id="recommended-features">
+                                        <span class="feature">Up to 500 Mbps</span>
+                                        <span class="feature">Wi-Fi 6 included</span>
+                                        <span class="feature">Unlimited data</span>
+                                    </div>
+                                </div>
+                                <div class="plan-price">
+                                    <span class="price" id="recommended-price">$69.99/mo</span>
                                 </div>
                             </div>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">See My Plan</button>
                         </div>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"Best customer service I've ever experienced. When we had a minor issue, they resolved it within hours. The technician was professional and explained everything clearly."</p>
-                            <div class="testimonial-author">
-                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Mike Chen">
-                                <div class="author-info">
-                                    <h4>Mike Chen</h4>
-                                    <span>Small Business Owner, Seattle WA</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <p>"We switched from our previous provider and couldn't be happier. The speeds are consistently fast, and we love the premium cable channels included in our bundle."</p>
-                            <div class="testimonial-author">
-                                <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Emily Rodriguez">
-                                <div class="author-info">
-                                    <h4>Emily Rodriguez</h4>
-                                    <span>Family of 5, Denver CO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-nav">
-                    <button class="nav-dot active" data-slide="0"></button>
-                    <button class="nav-dot" data-slide="1"></button>
-                    <button class="nav-dot" data-slide="2"></button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Find answers to common questions about our services</p>
+        <!-- Compare Plans -->
+        <section class="plans" id="plans">
+            <div class="container">
+                <div class="section-header reveal-in">
+                    <h2>Choose your internet speed</h2>
+                    <p>All plans include unlimited data, Wi-Fi 6 router, and 24/7 support</p>
+                    <div class="plan-toggle">
+                        <button class="toggle-btn active" data-billing="monthly">Monthly</button>
+                        <button class="toggle-btn" data-billing="annual">Annual (Save 10%)</button>
+                    </div>
+                </div>
+                <div class="plans-grid">
+                    <div class="plan-card reveal-in" data-delay="100">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=300&fit=crop&crop=center" alt="Essential Plan" class="plan-image" loading="lazy">
+                        <div class="plan-content">
+                            <h3>Essential</h3>
+                            <div class="plan-speed">Up to 100 Mbps</div>
+                            <div class="plan-price">
+                                <span class="price monthly-price">$39.99</span>
+                                <span class="price annual-price" style="display: none;">$35.99</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li>Perfect for browsing & email</li>
+                                <li>1-3 devices</li>
+                                <li>Wi-Fi 6 router included</li>
+                                <li>Unlimited data</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Get This Plan</button>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-card popular reveal-in" data-delay="200">
+                        <div class="popular-badge">Most Popular</div>
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop&crop=center" alt="Plus Plan" class="plan-image" loading="lazy">
+                        <div class="plan-content">
+                            <h3>Plus</h3>
+                            <div class="plan-speed">Up to 300 Mbps</div>
+                            <div class="plan-price">
+                                <span class="price monthly-price">$59.99</span>
+                                <span class="price annual-price" style="display: none;">$53.99</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li>Great for streaming & video calls</li>
+                                <li>4-8 devices</li>
+                                <li>Wi-Fi 6 router included</li>
+                                <li>Priority customer support</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Get This Plan</button>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-card reveal-in" data-delay="300">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop&crop=center" alt="Turbo Plan" class="plan-image" loading="lazy">
+                        <div class="plan-content">
+                            <h3>Turbo</h3>
+                            <div class="plan-speed">Up to 500 Mbps</div>
+                            <div class="plan-price">
+                                <span class="price monthly-price">$79.99</span>
+                                <span class="price annual-price" style="display: none;">$71.99</span>
+                                <span class="period">/mo</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li>Perfect for gaming & 4K streaming</li>
+                                <li>9-15 devices</li>
+                                <li>Wi-Fi 6E mesh system</li>
+                                <li>Advanced security suite</li>
+                            </ul>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Get This Plan</button>
+                        </div>
+                    </div>
+                    
+                   
+                    </div>
+                </div>
             </div>
-            <div class="faq-content">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What services does Nation Wide Net offer?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Nation Wide Net provides high-speed internet, TV plans, and business solutions with quick setup and seamless service..</p>
-                    </div>
+        </section>
+
+        <!-- TV Packs -->
+        <section class="tv-packs" id="tv">
+            <div class="container">
+                <div class="section-header reveal-in">
+                    <h2>TV that fits your style</h2>
+                    <p>Choose from hundreds of channels, premium networks, and on-demand content</p>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Is Nation Wide Net a service provider?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No, we’re a licensed partner connecting you with the best plans from top-tier service providers under one roof.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Are there any hidden fees?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Not at all. We believe in 100% transparency with clear pricing and no surprise charges.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How fast can I get installed?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Installations are typically completed within 24 hours of confirmation. Fast, efficient, and reliable!</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I contact Nation Wide Net?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You can use our contact form or call us directly. We're available 24/7 to assist with any queries or concerns.</p>
+                <div class="tv-hero reveal-in">
+                    <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800&h=400&fit=crop&crop=center" alt="TV Entertainment" class="tv-hero-image" loading="lazy">
+                    <div class="tv-hero-content">
+                        <h3>Stream everything, everywhere</h3>
+                        <p>Access your favorite shows, movies, and live sports on any device</p>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Browse Packs</button>
                     </div>
                 </div>
               
-                </div>
             </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Ready to upgrade your internet and cable experience?</p>
+        <!-- Fiber vs Others -->
+        <section class="comparison reveal-in" id="fiber-comparison">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why fiber beats the rest</h2>
+                    <p>Compare the technologies and see why fiber is the clear winner</p>
+                </div>
+                <div class="comparison-content">
+                    <div class="comparison-chart">
+                        <div class="comparison-row">
+                            <div class="comparison-label">Download Speed</div>
+                            <div class="comparison-bar fiber">
+                                <span class="bar-fill" style="width: 100%"></span>
+                                <span class="bar-label">Up to 1 Gig</span>
+                            </div>
+                            <div class="comparison-bar cable">
+                                <span class="bar-fill" style="width: 60%"></span>
+                                <span class="bar-label">Up to 400 Mbps</span>
+                            </div>
+                            <div class="comparison-bar fiveg">
+                                <span class="bar-fill" style="width: 40%"></span>
+                                <span class="bar-label">Up to 200 Mbps</span>
+                            </div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-label">Upload Speed</div>
+                            <div class="comparison-bar fiber">
+                                <span class="bar-fill" style="width: 100%"></span>
+                                <span class="bar-label">Up to 1 Gig</span>
+                            </div>
+                            <div class="comparison-bar cable">
+                                <span class="bar-fill" style="width: 25%"></span>
+                                <span class="bar-label">Up to 50 Mbps</span>
+                            </div>
+                            <div class="comparison-bar fiveg">
+                                <span class="bar-fill" style="width: 30%"></span>
+                                <span class="bar-label">Up to 75 Mbps</span>
+                            </div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-label">Reliability</div>
+                            <div class="comparison-bar fiber">
+                                <span class="bar-fill" style="width: 95%"></span>
+                                <span class="bar-label">99.9% uptime</span>
+                            </div>
+                            <div class="comparison-bar cable">
+                                <span class="bar-fill" style="width: 80%"></span>
+                                <span class="bar-label">Weather dependent</span>
+                            </div>
+                            <div class="comparison-bar fiveg">
+                                <span class="bar-fill" style="width: 70%"></span>
+                                <span class="bar-label">Signal dependent</span>
+                            </div>
+                        </div>
+                        <div class="comparison-legend">
+                            <div class="legend-item fiber">
+                                <span class="legend-color"></span>
+                                <span>Fiber</span>
+                            </div>
+                            <div class="legend-item cable">
+                                <span class="legend-color"></span>
+                                <span>Cable</span>
+                            </div>
+                            <div class="legend-item fiveg">
+                                <span class="legend-color"></span>
+                                <span>5G Home</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center" alt="Connected devices" loading="lazy">
+                    </div>
+                </div>
+                <div class="comparison-cta">
+                    <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Why Fiber Matters</button>
+                </div>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>1-800-NET-WIDE</p>
+        </section>
+
+        <!-- Whole-Home Wi-Fi -->
+        <section class="wifi-section reveal-in" id="wifi">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Whole-home Wi-Fi that works everywhere</h2>
+                    <p>Eliminate dead zones with our advanced router and mesh systems</p>
+                </div>
+                <div class="wifi-options">
+                    <div class="wifi-option">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=120&h=120&fit=crop&crop=center" alt="Wi-Fi 6 Router" loading="lazy">
+                        <div class="wifi-content">
+                            <h3>Wi-Fi 6 Router</h3>
+                            <p>Included with all plans. Covers up to 2,500 sq ft with blazing-fast speeds.</p>
+                            <ul class="wifi-features">
+                                <li>Latest Wi-Fi 6 technology</li>
+                                <li>Advanced security features</li>
+                                <li>Easy setup and management</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>info@nationwidenet.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Support Hours</h4>
-                            <p>24/7 Customer Support</p>
+                    <div class="wifi-option">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=120&h=120&fit=crop&crop=center" alt="Mesh System" loading="lazy">
+                        <div class="wifi-content">
+                            <h3>Mesh System</h3>
+                            <p>Upgrade to whole-home mesh for seamless coverage in larger homes.</p>
+                            <ul class="wifi-features">
+                                <li>Covers up to 6,000 sq ft</li>
+                                <li>Seamless roaming</li>
+                                <li>Self-optimizing network</li>
+                            </ul>
+                            <div class="wifi-price">+$9.99/mo</div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Phone Number" required>
-                    </div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="">Select Service</option>
-                            <option value="internet">Internet Only</option>
-                            <option value="cable">Cable TV Only</option>
-                            <option value="bundle">Internet + Cable Bundle</option>
-                            <option value="business">Business Services</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                <div class="wifi-cta">
+                    <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Optimize My Wi-Fi</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Gaming Zone -->
+        <section class="gaming-zone reveal-in" id="gaming">
+            <div class="container">
+                <div class="gaming-content">
+                    <div class="gaming-text">
+                        <h2>Level up your game</h2>
+                        <p>Get the ultimate gaming experience with fiber-fast speeds and gaming-optimized features.</p>
+                        <div class="gaming-badges">
+                            <div class="badge">
+                                <span class="badge-icon">⚡</span>
+                                <span>&lt;20ms latency</span>
+                            </div>
+                            <div class="badge">
+                                <span class="badge-icon">🌐</span>
+                                <span>IPv6 ready</span>
+                            </div>
+                            <div class="badge">
+                                <span class="badge-icon">🛡️</span>
+                                <span>DDoS protection</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Enable Game Mode</button>
+                    </div>
+                    <div class="gaming-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop&crop=center" alt="Gaming setup" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work/Study -->
+        <section class="work-study reveal-in" id="work-study">
+            <div class="container">
+                <div class="work-study-content">
+                    <div class="work-study-image">
+                        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=600&h=400&fit=crop&crop=center" alt="Work from home setup" loading="lazy">
+                    </div>
+                    <div class="work-study-text">
+                        <h2>Make home work-ready</h2>
+                        <p>Reliable internet that keeps you productive, whether you're working, learning, or video calling family.</p>
+                        <ul class="work-features">
+                            <li>Upload speeds as fast as download</li>
+                            <li>Dedicated bandwidth for video calls</li>
+                            <li>Business-grade reliability</li>
+                            <li>24/7 technical support</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Make Home Work-Ready</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bundles -->
+        <section class="bundles reveal-in" id="bundles">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Bundles that fit your lifestyle</h2>
+                    <p>Save more when you combine internet and TV services</p>
+                </div>
+                <div class="bundles-grid">
+                    <div class="bundle-card reveal-in" data-delay="100">
+                        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=200&fit=crop&crop=center" alt="Starter Bundle" class="bundle-image" loading="lazy">
+                        <div class="bundle-content">
+                            <h3>Starter Bundle</h3>
+                            <div class="bundle-details">
+                                <span>300 Mbps Internet</span>
+                                <span>Essential TV (100+ channels)</span>
+                                <span>Wi-Fi 6 router</span>
+                            </div>
+                            <div class="bundle-price">
+                                <span class="price">$89.99</span>
+                                <span class="period">/mo</span>
+                                <span class="savings">Save $20/mo</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Lock This Bundle</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bundle-card popular reveal-in" data-delay="200">
+                        <div class="popular-badge">Best Value</div>
+                        <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=200&fit=crop&crop=center" alt="Family Bundle" class="bundle-image" loading="lazy">
+                        <div class="bundle-content">
+                            <h3>Family Bundle</h3>
+                            <div class="bundle-details">
+                                <span>500 Mbps Internet</span>
+                                <span>Premium TV (200+ channels)</span>
+                                <span>Mesh Wi-Fi system</span>
+                            </div>
+                            <div class="bundle-price">
+                                <span class="price">$129.99</span>
+                                <span class="period">/mo</span>
+                                <span class="savings">Save $35/mo</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Lock This Bundle</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bundle-card reveal-in" data-delay="300">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=200&fit=crop&crop=center" alt="Sports Bundle" class="bundle-image" loading="lazy">
+                        <div class="bundle-content">
+                            <h3>Sports Bundle</h3>
+                            <div class="bundle-details">
+                                <span>1 Gig Internet</span>
+                                <span>Sports TV (300+ channels)</span>
+                                <span>Premium mesh system</span>
+                            </div>
+                            <div class="bundle-price">
+                                <span class="price">$179.99</span>
+                                <span class="period">/mo</span>
+                                <span class="savings">Save $50/mo</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Lock This Bundle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Savings Calculator -->
+        <section class="savings-calculator reveal-in" id="savings">
+            <div class="container">
+                <div class="savings-content">
+                    <div class="savings-form">
+                        <h2>See how much you'll save</h2>
+                        <p>Enter your current bill and see your potential savings with Nation Wide Net</p>
+                        <form class="calculator-form" id="calculator-form">
+                            <div class="form-group">
+                                <label for="current-bill">Current monthly bill</label>
+                                <input type="number" id="current-bill" class="form-input" placeholder="$120" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="current-speed">Current internet speed</label>
+                                <select id="current-speed" class="form-select">
+                                    <option value="50">Up to 50 Mbps</option>
+                                    <option value="100">Up to 100 Mbps</option>
+                                    <option value="200">Up to 200 Mbps</option>
+                                    <option value="300">Up to 300 Mbps</option>
+                                    <option value="500">Up to 500 Mbps</option>
+                                    <option value="1000">1 Gig+</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">See My Savings</button>
+                        </form>
+                        <div class="savings-result" id="savings-result" style="display: none;">
+                            <div class="savings-amount">
+                                <span class="savings-text">You could save</span>
+                                <span class="savings-value" id="savings-value">$240</span>
+                                <span class="savings-period">per year</span>
+                            </div>
+                            <p class="savings-note">Plus get faster speeds and better reliability!</p>
+                        </div>
+                    </div>
+                    <div class="savings-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&crop=center" alt="Savings illustration" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Moving Center -->
+        <section class="moving-center reveal-in" id="moving">
+            <div class="container">
+                <div class="moving-content">
+                    <div class="moving-image">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop&crop=center" alt="Moving to new home" loading="lazy">
+                    </div>
+                    <div class="moving-text">
+                        <h2>Moving? We've got you covered</h2>
+                        <p>Transfer your service to your new home with zero downtime and professional installation.</p>
+                        <ul class="moving-features">
+                            <li>Free service transfer</li>
+                            <li>Professional installation</li>
+                            <li>Same-day activation available</li>
+                            <li>Keep your current plan and pricing</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Move My Service</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coverage & Reliability -->
+        <section class="coverage reveal-in" id="coverage">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Reliable service you can count on</h2>
+                    <p>Our fiber network delivers consistent speeds with 99.9% uptime</p>
+                </div>
+                <div class="coverage-content">
+                    <div class="coverage-map">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=center" alt="Coverage map" loading="lazy">
+                        <div class="coverage-status">
+                            <div class="status-chip online">
+                                <span class="status-dot"></span>
+                                <span>Network Status: All Systems Operational</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coverage-stats">
+                        <div class="stat">
+                            <div class="stat-value">99.9%</div>
+                            <div class="stat-label">Network Uptime</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">&lt;20ms</div>
+                            <div class="stat-label">Average Latency</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">24/7</div>
+                            <div class="stat-label">Network Monitoring</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Check My Area</button>
+            </div>
+        </section>
+
+        <!-- Apps & Streaming -->
+        <section class="apps-streaming reveal-in" id="apps">
+            <div class="container">
+                <div class="apps-content">
+                    <div class="apps-text">
+                        <h2>Watch anywhere, on any device</h2>
+                        <p>Take your entertainment with you using our mobile and streaming apps</p>
+                        <ul class="apps-features">
+                            <li>Stream live TV on your phone or tablet</li>
+                            <li>Download shows for offline viewing</li>
+                            <li>Sync across all your devices</li>
+                            <li>4K streaming on supported devices</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Get the Apps</button>
+                    </div>
+                    <div class="apps-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop&crop=center" alt="Streaming on multiple devices" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security & Privacy -->
+        <section class="security reveal-in" id="security">
+            <div class="container">
+                <div class="security-content">
+                    <div class="security-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop&crop=center" alt="Network security" loading="lazy">
+                    </div>
+                    <div class="security-text">
+                        <h2>Your privacy and security matter</h2>
+                        <p>Advanced protection keeps your family safe online with enterprise-grade security features.</p>
+                        <ul class="security-features">
+                            <li>Advanced firewall protection</li>
+                            <li>Parental controls and content filtering</li>
+                            <li>Anti-malware and virus protection</li>
+                            <li>Secure guest network</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Protect My Network</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability -->
+        <section class="sustainability reveal-in" id="sustainability">
+            <div class="container">
+                <div class="sustainability-content">
+                    <div class="sustainability-text">
+                        <h2>Building a sustainable future</h2>
+                        <p>Our fiber network is energy-efficient and built to last, reducing our environmental impact while connecting communities.</p>
+                        <div class="sustainability-stats">
+                            <div class="sustainability-stat">
+                                <div class="stat-value">50%</div>
+                                <div class="stat-label">Less energy than cable</div>
+                            </div>
+                            <div class="sustainability-stat">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Renewable energy powered</div>
+                            </div>
+                            <div class="sustainability-stat">
+                                <div class="stat-value">25+</div>
+                                <div class="stat-label">Years network lifespan</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Our Impact</button>
+                    </div>
+                    <div class="sustainability-image">
+                        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop&crop=center" alt="Sustainable technology" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials reveal-in" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What our customers say</h2>
+                    <p>Join thousands of satisfied customers who've made the switch</p>
+                </div>
+                <div class="testimonials-grid" id="testimonials-grid">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"The installation was seamless and the speeds are exactly as promised. Working from home has never been better!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=120&h=120&fit=crop&crop=face" alt="Customer testimonial" loading="lazy">
+                                <div class="author-info">
+                                    <div class="author-name">Sarah M.</div>
+                                    <div class="author-location">Remote Worker</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"Finally, internet that can handle our family's streaming, gaming, and video calls all at once without any lag."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Customer testimonial" loading="lazy">
+                                <div class="author-info">
+                                    <div class="author-name">Mike R.</div>
+                                    <div class="author-location">Family of 5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"The customer service is outstanding. They helped me find the perfect plan and the installation was professional."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=face" alt="Customer testimonial" loading="lazy">
+                                <div class="author-info">
+                                    <div class="author-name">Jennifer L.</div>
+                                    <div class="author-location">Small Business Owner</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                </div>
+                <button class="btn btn-outline" onclick="window.open('tel:8333412514', '_self')">Read More Reviews</button>
+            </div>
+        </section>
+
+        <!-- Support Hub -->
+        <section class="support-hub reveal-in" id="support">
+            <div class="container">
+                <div class="support-content">
+                    <div class="support-text">
+                        <h2>24/7 support when you need it</h2>
+                        <p>Get help fast with multiple support options designed around your schedule</p>
+                    </div>
+                    <div class="support-image">
+                        <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=600&h=400&fit=crop&crop=center" alt="Customer support" loading="lazy">
+                    </div>
+                </div>
+                <div class="support-options">
+                    <div class="support-option">
+                        <div class="support-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>Instant help available 24/7</p>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Start Chat</button>
+                    </div>
+                    <div class="support-option">
+                        <div class="support-icon">❓</div>
+                        <h3>FAQs</h3>
+                        <p>Quick answers to common questions</p>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Browse FAQs</button>
+                    </div>
+                    <div class="support-option">
+                        <div class="support-icon">🔧</div>
+                        <h3>Troubleshoot</h3>
+                        <p>Self-service diagnostic tools</p>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Run Diagnostics</button>
+                    </div>
+                    <div class="support-option">
+                        <div class="support-icon">🔄</div>
+                        <h3>Network Reset</h3>
+                        <p>Restart your connection remotely</p>
+                        <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Reset Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini FAQ -->
+        <section class="mini-faq reveal-in" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Quick answers</h2>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Are there contracts?</h3>
+                        <p>No long-term contracts required. Cancel anytime with 30 days notice.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Data caps?</h3>
+                        <p>All plans include unlimited data with no throttling or overage fees.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Equipment returns?</h3>
+                        <p>30-day satisfaction guarantee. Return equipment for full refund if not satisfied.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Cloud DVR?</h3>
+                        <p>Included with TV packages. Record up to 8 shows simultaneously.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Mobile apps?</h3>
+                        <p>Free apps for iOS and Android. Stream live TV and manage your account.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Billing cycle?</h3>
+                        <p>Monthly billing with autopay discount available. No surprise fees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta" id="final-cta">
+            <div class="final-cta-bg">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920&h=600&fit=crop&crop=center" alt="" class="final-cta-image">
+                <div class="final-cta-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="final-cta-content reveal-in">
+                    <h2>Ready to connect everything?</h2>
+                    <p>Join thousands of customers who've upgraded to fiber-fast internet and premium TV</p>
+                    <div class="final-cta-buttons">
+                        <button class="btn btn-primary btn-large" onclick="window.open('tel:8333412514', '_self')">Build My Bundle</button>
+                        <button class="btn btn-outline btn-large" onclick="window.open('tel:8333412514', '_self')">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Nation Wide Net</h3>
-                    <p>Connecting America with high-speed internet and premium cable services.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="Nation Wide Net" class="footer-logo">
+                    <p>Connecting communities with fiber-fast internet and premium entertainment.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <a href="#internet">Internet</a>
+                        <a href="#tv">TV</a>
+                        <a href="#bundles">Bundles</a>
+                        <a href="#business">Business</a>
                     </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">High-Speed Internet</a></li>
-                        <li><a href="#services">Cable TV</a></li>
-                        <li><a href="#services">Digital Phone</a></li>
-                        <li><a href="#plans">Business Plans</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#">Technical Support</a></li>
-                        <li><a href="#">Bill Pay</a></li>
-                        <li><a href="#">Service Status</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="refund.html">Refund Policy</a></li>
-                        <li><a href="#">Acceptable Use Policy</a></li>
-                    </ul>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="#support">Support Center</a>
+                        <a href="#faq">FAQs</a>
+                        <a href="#coverage">Coverage Map</a>
+                        <a href="#moving">Moving Center</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="refund.html">Refund Policy</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Nation Wide Net. All rights reserved.</p>
+                <p>&copy; 2025 Nation Wide Net. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Bundle Builder Modal -->
+    <div class="modal" id="bundle-builder-modal">
+        <div class="modal-overlay" onclick="closeBundleBuilder()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Build Your Perfect Bundle</h2>
+                <button class="modal-close" onclick="closeBundleBuilder()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="bundle-step active" data-step="1">
+                    <h3>Choose your internet speed</h3>
+                    <div class="bundle-options">
+                        <div class="bundle-option" data-value="essential">
+                            <h4>Essential - 100 Mbps</h4>
+                            <p>$39.99/mo</p>
+                        </div>
+                        <div class="bundle-option" data-value="plus">
+                            <h4>Plus - 300 Mbps</h4>
+                            <p>$59.99/mo</p>
+                        </div>
+                        <div class="bundle-option" data-value="turbo">
+                            <h4>Turbo - 500 Mbps</h4>
+                            <p>$79.99/mo</p>
+                        </div>
+                        <div class="bundle-option" data-value="gig">
+                            <h4>Gig - 1000 Mbps</h4>
+                            <p>$99.99/mo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bundle-step" data-step="2">
+                    <h3>Add TV service?</h3>
+                    <div class="bundle-options">
+                        <div class="bundle-option" data-value="none">
+                            <h4>No TV</h4>
+                            <p>Internet only</p>
+                        </div>
+                        <div class="bundle-option" data-value="essential">
+                            <h4>Essential TV</h4>
+                            <p>+$29.99/mo</p>
+                        </div>
+                        <div class="bundle-option" data-value="premium">
+                            <h4>Premium TV</h4>
+                            <p>+$49.99/mo</p>
+                        </div>
+                        <div class="bundle-option" data-value="sports">
+                            <h4>Sports Package</h4>
+                            <p>+$69.99/mo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bundle-step" data-step="3">
+                    <h3>Your bundle is ready!</h3>
+                    <div class="bundle-summary" id="bundle-summary">
+                        <div class="summary-item">
+                            <span class="summary-service">Internet: Plus 300 Mbps</span>
+                            <span class="summary-price">$59.99/mo</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-service">TV: Essential Package</span>
+                            <span class="summary-price">$29.99/mo</span>
+                        </div>
+                        <div class="summary-total">
+                            <span class="total-label">Bundle Total:</span>
+                            <span class="total-price">$79.98/mo</span>
+                            <span class="total-savings">Save $10/mo</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large">Get This Bundle</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="prevBundleStep()" id="bundle-prev" style="display: none;">Previous</button>
+                <button class="btn btn-primary" onclick="nextBundleStep()" id="bundle-next">Next</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

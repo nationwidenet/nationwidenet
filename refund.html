@@ -4,125 +4,307 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refund Policy - Nation Wide Net</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .legal-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 6rem 2rem;
-            line-height: 1.8;
-        }
-        .legal-content h1 {
-            color: var(--primary-green);
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-        }
-        .legal-content h2 {
-            color: var(--text-dark);
-            margin: 2rem 0 1rem;
-            font-size: 1.5rem;
-        }
-        .legal-content p {
-            margin-bottom: 1rem;
-            color: var(--text-light);
-        }
-        .legal-content ul {
-            margin-bottom: 1rem;
-            padding-left: 2rem;
-        }
-        .legal-content li {
-            margin-bottom: 0.5rem;
-            color: var(--text-light);
-        }
-        .back-link {
-            color: var(--primary-green);
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            display: inline-block;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .highlight-box {
-            background: #f0f9ff;
-            border-left: 4px solid var(--primary-green);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Nation Wide Net</h2>
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.svg" alt="Nation Wide Net" class="logo">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#internet" class="nav-link">Internet</a>
+                <a href="index.html#tv" class="nav-link">TV</a>
+                <a href="index.html#bundles" class="nav-link">Bundles</a>
+                <a href="index.html#support" class="nav-link">Support</a>
+            </nav>
+            <div class="header-ctas">
+                <button class="btn btn-outline" onclick="window.location.href='index.html#address-checker'">Check Availability</button>
+                <button class="btn btn-primary" onclick="window.open('tel:8333412514', '_self')">Build My Bundle</button>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="index.html#plans" class="nav-link">Plans</a></li>
-                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
         </div>
-    </nav>
+    </header>
 
-  <div class="legal-content">
-    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
-    
-    <h1>Refund Policy</h1>
-    <p><strong>Last updated:</strong> December 2024</p>
+    <main style="padding-top: 100px;">
+        <div class="container">
+            <div class="legal-content">
+                <h1>Refund Policy</h1>
+                <p class="legal-updated">Last updated: January 2025</p>
 
-    <div class="highlight-box">
-        <p><strong>General Policy:</strong> Nation Wide Net strives to ensure customer satisfaction. As a distributor of third-party services, our refund policies align with those of the providers we represent.</p>
-    </div>
+                <section class="legal-section">
+                    <h2>30-Day Satisfaction Guarantee</h2>
+                    <p>We stand behind our services with a 30-day satisfaction guarantee. If you're not completely satisfied with your Nation Wide Net service, you may cancel within the first 30 days for a full refund of monthly service charges.</p>
+                </section>
 
-    <h2>1. Cancellation Before Installation</h2>
-    <p>If you cancel your service request before installation, you may be eligible for a full refund of any upfront payments made to Nation Wide Net.</p>
+                <section class="legal-section">
+                    <h2>Refund Eligibility</h2>
+                    <h3>Eligible for Full Refund:</h3>
+                    <ul>
+                        <li>Monthly service charges within first 30 days</li>
+                        <li>Unused portions of prepaid service</li>
+                        <li>Installation fees if service is cancelled within 30 days</li>
+                        <li>Equipment rental fees for returned equipment</li>
+                    </ul>
+                    
+                    <h3>Non-Refundable Items:</h3>
+                    <ul>
+                        <li>Professional installation labor (after 30 days)</li>
+                        <li>Custom wiring or construction work</li>
+                        <li>Third-party service fees</li>
+                        <li>Damaged or unreturned equipment charges</li>
+                        <li>Early termination fees (where applicable)</li>
+                    </ul>
+                </section>
 
-    <h2>2. Service Issues</h2>
-    <p>If there's a verifiable issue with installation or activation directly attributable to Nation Wide Net, we will work to resolve it or, in rare cases, issue a refund.</p>
+                <section class="legal-section">
+                    <h2>Prorated Refunds</h2>
+                    <p>If you cancel service mid-billing cycle after the 30-day guarantee period:</p>
+                    <ul>
+                        <li>Internet service: Prorated refund for unused days</li>
+                        <li>TV service: No refund for partial month (programming costs)</li>
+                        <li>Premium channels: Prorated refund for unused days</li>
+                        <li>Equipment rental: Prorated refund upon equipment return</li>
+                    </ul>
+                </section>
 
-    <h2>3. Non-Refundable Items</h2>
-    <p>Fees related to installation, activation, or administrative processing are non-refundable.</p>
+                <section class="legal-section">
+                    <h2>Installation and Activation Fees</h2>
+                    <h3>Standard Installation</h3>
+                    <ul>
+                        <li>Free with 12-month service commitment</li>
+                        <li>$99 fee for month-to-month service</li>
+                        <li>Fully refundable within 30-day guarantee period</li>
+                    </ul>
+                    
+                    <h3>Custom Installation</h3>
+                    <ul>
+                        <li>Additional charges for complex installations</li>
+                        <li>Custom work charges are non-refundable after completion</li>
+                        <li>Estimates provided before any custom work begins</li>
+                    </ul>
+                    
+                    <h3>Activation Fees</h3>
+                    <ul>
+                        <li>$25 activation fee for new service</li>
+                        <li>Refundable within 30-day guarantee period</li>
+                        <li>Waived for qualifying promotions</li>
+                    </ul>
+                </section>
 
-    <h2>4. Request Process</h2>
-    <p>Contact our customer service team within 14 days of the issue to initiate a refund request. Supporting documentation may be required.</p>
+                <section class="legal-section">
+                    <h2>Equipment Returns</h2>
+                    <h3>Return Requirements</h3>
+                    <ul>
+                        <li>All equipment must be returned within 30 days of service cancellation</li>
+                        <li>Equipment must be in good working condition</li>
+                        <li>Original packaging not required, but equipment must be properly protected</li>
+                        <li>We provide prepaid return shipping labels</li>
+                    </ul>
+                    
+                    <h3>Equipment Replacement Charges</h3>
+                    <ul>
+                        <li>Router/Modem: $150</li>
+                        <li>TV Receiver: $100</li>
+                        <li>Remote Control: $25</li>
+                        <li>Cables and Accessories: $15-$50 each</li>
+                    </ul>
+                </section>
 
-    <h2>5. Refund Timelines</h2>
-    <p>Approved refunds will be processed within 7–14 business days, depending on your payment method and financial institution.</p>
+                <section class="legal-section">
+                    <h2>How to Request a Refund</h2>
+                    <ol>
+                        <li><strong>Contact Customer Service:</strong> Reach out through our live chat or customer portal</li>
+                        <li><strong>Provide Account Information:</strong> Have your account number and service address ready</li>
+                        <li><strong>Specify Refund Reason:</strong> Let us know why you're requesting a refund</li>
+                        <li><strong>Schedule Equipment Return:</strong> We'll arrange pickup or provide return instructions</li>
+                        <li><strong>Confirmation:</strong> You'll receive email confirmation of your refund request</li>
+                    </ol>
+                </section>
 
-    <h2>6. Contact Us</h2>
-    <p>For questions regarding our refund policy, call +1.</p>
-</div>
+                <section class="legal-section">
+                    <h2>Refund Processing</h2>
+                    <h3>Processing Time</h3>
+                    <ul>
+                        <li>Refunds are processed within 5-7 business days after equipment return</li>
+                        <li>Credit card refunds may take 3-5 additional business days to appear</li>
+                        <li>Bank transfer refunds may take 7-10 business days</li>
+                    </ul>
+                    
+                    <h3>Refund Method</h3>
+                    <ul>
+                        <li>Refunds are issued to the original payment method</li>
+                        <li>If original payment method is unavailable, we'll issue a check</li>
+                        <li>Promotional credits are not refundable in cash</li>
+                    </ul>
+                </section>
 
+                <section class="legal-section">
+                    <h2>Exceptions and Special Circumstances</h2>
+                    <h3>Service Moves</h3>
+                    <ul>
+                        <li>Moving to a serviceable area: No charges or fees</li>
+                        <li>Moving to non-serviceable area: Full refund of remaining service</li>
+                        <li>Equipment transfer or return as needed</li>
+                    </ul>
+                    
+                    <h3>Service Issues</h3>
+                    <ul>
+                        <li>Extended outages may qualify for service credits</li>
+                        <li>Performance issues will be investigated before refunds</li>
+                        <li>Technical support will be provided to resolve issues when possible</li>
+                    </ul>
+                    
+                    <h3>Contract Cancellations</h3>
+                    <ul>
+                        <li>Early termination fees may apply to contract plans</li>
+                        <li>Military deployment and qualifying moves are exempt</li>
+                        <li>Death or disability may qualify for fee waiver</li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2>Disputed Charges</h2>
+                    <p>If you believe you've been charged incorrectly:</p>
+                    <ol>
+                        <li>Contact us within 60 days of the charge</li>
+                        <li>Provide details about the disputed amount</li>
+                        <li>We'll investigate and respond within 30 days</li>
+                        <li>Credits will be applied to your account if charges are found to be incorrect</li>
+                    </ol>
+                </section>
+
+                <section class="legal-section">
+                    <h2>Changes to This Policy</h2>
+                    <p>We may update this Refund Policy from time to time. Changes will be posted on our website with the updated effective date. Material changes affecting your rights will be communicated via email or account notification.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2>Contact Us</h2>
+                    <p>For refund requests or questions about this policy, please contact us through our live chat support available 24/7 on our website, or through your online account portal.</p>
+                </section>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Nation Wide Net</h3>
-                    <p>Connecting America with high-speed internet and premium cable services.</p>
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="Nation Wide Net" class="footer-logo">
+                    <p>Connecting communities with fiber-fast internet and premium entertainment.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="refund.html">Refund Policy</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <a href="index.html#internet">Internet</a>
+                        <a href="index.html#tv">TV</a>
+                        <a href="index.html#bundles">Bundles</a>
+                        <a href="index.html#business">Business</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="index.html#support">Support Center</a>
+                        <a href="index.html#faq">FAQs</a>
+                        <a href="index.html#coverage">Coverage Map</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="refund.html" class="active">Refund Policy</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Nation Wide Net. All rights reserved.</p>
+                <p>&copy; 2025 Nation Wide Net. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <style>
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 0 80px;
+        }
+
+        .legal-content h1 {
+            font-size: 3rem;
+            color: #EAFBF6;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .legal-updated {
+            text-align: center;
+            color: #9FD9C7;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .legal-section {
+            margin-bottom: 40px;
+            padding: 32px;
+            background: rgba(5, 97, 75, 0.1);
+            border-radius: 16px;
+            border: 1px solid rgba(1, 222, 130, 0.25);
+        }
+
+        .legal-section h2 {
+            color: #01DE82;
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .legal-section h3 {
+            color: #EAFBF6;
+            font-size: 1.2rem;
+            margin: 24px 0 12px;
+        }
+
+        .legal-section p {
+            color: #9FD9C7;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .legal-section ul, .legal-section ol {
+            margin: 16px 0;
+            padding-left: 20px;
+        }
+
+        .legal-section li {
+            color: #9FD9C7;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .legal-section strong {
+            color: #EAFBF6;
+        }
+
+        .footer-section a.active {
+            color: #01DE82;
+        }
+
+        @media (max-width: 768px) {
+            .legal-content {
+                padding: 20px 0 60px;
+            }
+
+            .legal-content h1 {
+                font-size: 2rem;
+            }
+
+            .legal-section {
+                margin-bottom: 24px;
+                padding: 24px;
+            }
+        }
+    </style>
 </body>
 </html>
